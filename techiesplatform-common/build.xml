@@ -7,7 +7,7 @@
 	<target name="clean">
 		<delete dir="${build.dir}" />
 	</target>
-
+ 
 	<!-- Creates the  build, docs and dist directory-->
 	<target name="makedir">
 		<mkdir dir="${build.dir}" />
