@@ -9,6 +9,8 @@ public class DateUtils {
 
 	private static final String STANDARD_FORMATE = "dd/MM/yyyy";
 
+	
+	
 	public static Date getDate(String date) {
 		Date localDate = null;
 		try {
