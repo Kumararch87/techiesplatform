@@ -1,1 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<project name="techiesplatform">
+
+	<property file="build.properties"/>
+	
+	<import file="${build.commons}/build-master.xml"/>
+	<property name="project.name" value="SepaPeddAttivo"/>
+	<property name="project.version" value="1.0.0"/>
+	<property name="project.home" value="${basedir}"/>
+	
+	<target name="module-definition">
+		<ant dir="techiesplatform-commmon" target="${target}"/>
+		<ant dir="techiesplatform-interface" target="${target}"/>
+		<ant dir="techiesplatform-controller" target="${target}"/>
+		<ant dir="techiesplatform-core" target="${target}"/>
+		<ant dir="techiesplatform-external" target="${target}"/>
+		<ant dir="techiesplatform-persistence" target="${target}"/>
+	</target>
+	
+</project>
