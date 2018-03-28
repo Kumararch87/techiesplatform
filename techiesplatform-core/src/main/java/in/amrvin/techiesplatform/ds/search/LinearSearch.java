@@ -1,9 +1,9 @@
-package main.java.in.amrvin.techiesplatform.ds.search;
+package in.amrvin.techiesplatform.ds.search;
 
 public class LinearSearch implements ISearch {
 
 	@Override
-	public int linearSearch(int[] listOfValue, int findValue, boolean isFirstOccur) {
+	public int search(int[] listOfValue, int findValue, boolean isFirstOccur) {
 		int presentPos = -1;
 		for (int pos = 0; pos < listOfValue.length; pos++) {
 			if (listOfValue[pos] == findValue) {
@@ -17,7 +17,7 @@ public class LinearSearch implements ISearch {
 	}
 
 	public int linearSearch(int[] listOfValue, int findValue) {
-		return linearSearch(listOfValue,findValue,true);
+		return search(listOfValue,findValue,true);
 	}
 
 }
